@@ -6,7 +6,8 @@
                  [org.clojure/data.json "0.2.6"]
                  [compojure "1.6.1"]
                  [ring/ring-defaults "0.3.2"]
-                 [amazonica "0.3.145"]]
+                 [amazonica "0.3.145"]
+                 [metosin/compojure-api "1.1.11"]]
   :plugins [[lein-ring "0.12.5"]]
   :ring {:handler docker-scheduler.handler/app}
   :profiles

@@ -17,5 +17,4 @@
                                            month (t/month date)
                                            year (t/year date)
                                            joined-date (string/join " " [minute hour day month "?" year])]
-
                                 (str "cron(" joined-date ")")))

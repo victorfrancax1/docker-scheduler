@@ -27,8 +27,7 @@
 (defn create-job-trigger! [docker-job queue-arn]
   (do
     (create-job-event-rule! docker-job)
-    (put-job-event-target! docker-job queue-arn))
-  )
+    (put-job-event-target! docker-job queue-arn)))
 
 (defn query-all-jobs [table-name]
   (:items (dynamo/scan :table-name table-name)))

@@ -7,7 +7,7 @@
                  [compojure "1.6.1"]
                  [ring/ring-defaults "0.3.2"]
                  [amazonica "0.3.145"]
-                 [metosin/compojure-api "1.1.11"]]
+                 [metosin/compojure-api "2.0.0-alpha28"]]
   :plugins [[lein-ring "0.12.5"]]
   :ring {:handler docker-scheduler.handler/app}
   :profiles

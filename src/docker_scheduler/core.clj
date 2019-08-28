@@ -9,8 +9,8 @@
   (:import java.util.Date))
 
 (def job {:image "hello-world" :date "1999-2-2T12:00"})
-(def TABLE-NAME "scheduler-jobs")
-(def QUEUE-ARN  "arn:aws:sqs:us-west-2:935605334497:docker-scheduler-queue")
+(def TABLE-NAME "docker-scheduler-jobs-tb")
+(def QUEUE-ARN  (System/getenv "QUEUE_ARN"))
 
 (s/defschema NewJob
   {:image s/Str
